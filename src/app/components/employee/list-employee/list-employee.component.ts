@@ -60,6 +60,7 @@ export class ListEmployeeComponent implements OnInit {
 
   update(em: Employee) {
     this.updating = true;
+    this.anadir = false;
     this.employeeOld = em;
     this.initForm(em);
   }

@@ -146,12 +146,11 @@
             </thead>
             <tbody>
 
-                <tr
-                    *ngFor="let concesionaria of fewemployees |  slice: (page-1) * pageSize : page * pageSize; index as i">
+                <tr *ngFor="let em of fewemployees |  slice: (page-1) * pageSize : page * pageSize; index as i">
                     <th scope="row">{{ (page -1) * pageSize + i + 1 }}</th>
                     <td *ngIf="!updating">
 
-                        {{ concesionaria.name| translate }}
+                        {{ em.name| translate }}
                     </td>
                     <td *ngIf="employeeForm && updating">
                         <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
@@ -166,9 +165,9 @@
                         </form>
                     </td>
 
-                    <td>{{ concesionaria.surname| translate }}</td>
+                    <td>{{ em.surname| translate }}</td>
 
-                    <td *ngIf="!updating">{{ concesionaria.work| translate }}</td>
+                    <td *ngIf="!updating">{{ em.work| translate }}</td>
                     <td *ngIf="employeeForm && updating">
                         <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
                             <div class="form-group">
@@ -189,15 +188,15 @@
 
 
 
-                    <td>{{ concesionaria.dateOfBirth| date: "dd/MM/YYYY" }}</td>
+                    <td>{{ em.dateOfBirth| date: "dd/MM/YYYY" }}</td>
                     <td class="cell">
-                        <button *ngIf="!updating" class="btn btn-warning mr-4" (click)="update(concesionaria)">
+                        <button *ngIf="!updating" class="btn btn-warning mr-4" (click)="update(em)">
                             {{'Editar' | translate}}
                         </button>
                         <button *ngIf="updating" class="btn btn-warning mr-4" (click)="onSubmitUpdate()">
                             {{'Editar' | translate}}
                         </button>
-                        <button class="btn btn-danger" (click)="onDelete(concesionaria)">
+                        <button class="btn btn-danger" (click)="onDelete(em)">
                             {{'Borrar' | translate}}
                         </button>
                     </td>

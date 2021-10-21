@@ -2,7 +2,7 @@
     <div class="jumbotron fondo">
         <div class="container ">
             <div class="row d-flex justify-content-center text-alpha" style="font-family: Open Sans sans-serif;">
-                <h1>Welcome to vyvojar-uloha-2 task</h1>
+                <h1>{{ 'Welcome to vyvojar-uloha-2 task' | translate}}</h1>
             </div>
 
             <div class="d-flex justify-content-center" style="font-family: Open Sans sans-serif;">
@@ -16,47 +16,47 @@
                 <div class="card-body ">
                     <div class="row d-flex justify-content-center text-alpha"
                         style="font-family: Open Sans sans-serif;">
-                        <h2>Description</h2>
+                        <h2>{{ 'Description' | translate}}</h2>
                     </div>
                     <div>
-                        <p>Create a web application with the list of the employees by using angular 2.
+                        <p>{{ 'Create a web application with the list of the employees by using angular 2.' | translate}}
                             <br>
-                            If you are more friendly with some other framework, please use it.
+                            {{ 'If you are more friendly with some other framework, please use it.' | translate}}
                         </p>
                         <br>
-                        <p> <b>UseCases:</b></p>
+                        <p> <b> {{ 'UseCases:' | translate}}</b></p>
 
 
                         <ul>
 
                             <li>
-                                we need a list of all employees (nice to have: with search)
+                                {{ 'we need a list of all employees (nice to have: with search)' | translate}}
 
                             </li>
                             <li>
-                                we can hire a new employee and we need to register these properties:
+                                {{ 'we can hire a new employee and we need to register these properties:' | translate}}
                                 <ul>
                                     <li>
-                                        name
+                                        {{ 'name' | translate}}
                                     </li>
-                                    <li>surname</li>
+                                    <li> {{ 'surname' | translate}}</li>
                                     <li>
-                                        work position (we can choose from an enum, which is available on API method GET,
+                                        {{ 'work' | translate}}  {{ '(we can choose from an enum, which is available on API method GET,
                                         on URL:
-                                        https://ibillboard.com/api/positions)
+                                        https://ibillboard.com/api/positions)' | translate}}
                                     </li>
                                     <li>
-                                        date of birth
+                                        {{ 'date of birth'| translate}}
                                     </li>
                                 </ul>
                             <li>
-                                we can change name of employee
+                                {{ 'we can change name of employee'| translate}}
                             </li>
                             <li>
-                                employee can change work position
+                                {{ 'employee can change work position'| translate}}
                             </li>
                             <li>
-                                employee can leave the company
+                                {{ 'employee can leave the company'| translate}}
                             </li>
                         </ul>
 
