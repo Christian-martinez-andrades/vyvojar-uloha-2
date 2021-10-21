@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light d-flex ajuste"
+  style="background-color: rgb(0, 0, 43) !important;">
+  <div>
+   
+
+  </div>
+
+
+
+
+
+
+
+  <button class="navbar-toggler" (click)="isShown = !isShown" type="button" data-toggle="collapse"
+    data-target="#smallNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse d-flex justify-content-center" [ngClass]="{ 'show': isShown }" id="smallNav">
+
+
+
+    <ul class="nav navbar-nav text-right d-flex justify-content-center cab">
+      <!-- <li class="nav-item" *ngIf="rol == 'disconnected'"><a class="nav-link" (click)="isShown = false"
+            routerLink="/login">Login</a></li> -->
+
+      <li class="cursor nav-item" routerLink="/"> <a class="cabecera">
+          <fa-icon [icon]="['fas', 'home']"></fa-icon>vyvojar-uloha-2
+        </a></li>
+      <!-- <li class="nav-item" *ngIf="rol != 'disconnected'"><a class="nav-link" href="#"
+            (click)="onLogout($event)">Logout</a></li> -->
+    </ul>
+
+
+
+    <ul class="nav navbar-nav ml-auto text-right d-none d-lg-flex" style="float: right;">
+      <!-- <li class="nav-item" *ngIf="rol == 'disconnected'"><a class="nav-link" (click)="isShown = false"
+          routerLink="/login">Login</a></li> -->
+
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<div class="nav navbar-nav ml-auto text-right  d-lg-flex" style="float: right">
+  <app-select-language></app-select-language>
+</div>

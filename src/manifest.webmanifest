@@ -1,0 +1,12 @@
+{
+  "name": "vyvojar-uloha-2",
+  "short_name": "vyvojar-uloha-2",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+   
+  ]
+}

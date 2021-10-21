@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+
+  vyvojar-uloha-2_web_demo:
+    container_name: vyvojar-uloha-2_web_demo
+    image: ${IMAGE_NAME}
+    ports:
+      - '${vyvojar-uloha-2_PORT}:80'

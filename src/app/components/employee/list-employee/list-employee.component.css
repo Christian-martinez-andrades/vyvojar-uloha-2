@@ -1,0 +1,15 @@
+.custom-scrollbar {
+    position: relative;
+    min-height: 300px;
+    max-height: 65vh;
+    overflow: auto;
+  }
+  
+  .table-wrapper-scroll-y {
+    display: block;
+  }
+  
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }

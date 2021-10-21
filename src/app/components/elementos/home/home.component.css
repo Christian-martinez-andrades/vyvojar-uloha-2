@@ -1,0 +1,21 @@
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #38385B;
+    border-color: #38385B;
+}
+
+h1{
+    font-size: x-large;
+    font-weight: bold ;
+}
+.im {
+    /* width: 50%;
+    height: 50%; */
+    
+}
+.card-body{
+    font-size: large;
+}
+.jumbotron {
+    background-color: white !important;
+}

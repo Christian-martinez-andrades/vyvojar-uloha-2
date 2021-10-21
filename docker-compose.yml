@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  vyvojar-uloha-2_web:
+    container_name: vyvojar-uloha-2_web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '4201:4200'
